@@ -120,6 +120,10 @@ highlight default link coffeePrototype SpecialChar
 syntax match coffeeFunction /->\|=>/
 highlight default link coffeeFunction Function
 
+" makes logger. lines unimportant
+syntax match coffeeLogger /^.*logger\..*$/
+highlight coffeeLogger ctermfg=darkgray guifg=darkgray
+
 syntax keyword coffeeTodo TODO FIXME XXX contained
 highlight default link coffeeTodo Todo
 
