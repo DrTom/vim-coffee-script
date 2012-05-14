@@ -41,6 +41,11 @@ syn match coffeeKeyword /\<for\s\+own\>/ contained containedin=coffeeRepeat
 \                       display
 hi def link coffeeKeyword Keyword
 
+" highlight ?, aka the existential operator                                                   
+syntax match coffeeOperator /\v\?/
+hi def link coffeeOperator Operator
+
+
 syn match coffeeOperator /\<\%(instanceof\|typeof\|delete\)\>/ display
 hi def link coffeeOperator Operator
 
